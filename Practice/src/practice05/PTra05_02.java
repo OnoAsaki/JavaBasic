@@ -19,7 +19,9 @@ public class PTra05_02 {
 
 		// ★ 変数inputを宣言して、変数lineを数値に変換した値を代入してください
 		// ※ コマンドプロンプトで入力された値が、数字ではなかった場合はプログラムがエラーになって良いです
+		int input=Integer.parseInt(line);
 
+		int num=input%2;
 
 		/*
 		 *  ★ 以下の仕様で、switch文を記述してください
@@ -27,8 +29,15 @@ public class PTra05_02 {
 		 *  ●変数inputが2で割り切れる場合		->	「##は偶数です」
 		 *  ●変数inputが2で割り切れない場合	->	「##は奇数です」
 		 *
+		 *
 		 *  ※##は変数inputの中身
 		 */
-
+		switch (num) {
+			case 1:
+				System.out.println(input+"は奇数です");
+				break;
+			default:
+				System.out.println(input+"は偶数です");
+		}
 	}
 }
