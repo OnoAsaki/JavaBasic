@@ -21,12 +21,15 @@ public class PTra06_06 {
 		 */
 		System.out.println("-----------------------------------");
 
-		for (int num=1;num<=25;num++) {
-			System.out.print("■");
-
-			if (num%5==0) {
-				System.out.println();
+		for (int num=1;num<=5;num++) {
+			for (int i=1;i<num;i++) {
+				System.out.print("■");
 			}
+			for (int i=5;i>=num;i--) {
+				System.out.print("□");
+			}
+			System.out.println();
+
 		}
 
 	}
