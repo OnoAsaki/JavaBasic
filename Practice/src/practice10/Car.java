@@ -8,15 +8,23 @@ public class Car {
 
 	int gasoline;
 
+	int distance;
+
 
 	public int run() {
 
-		gasoline--;
-
+		int n = gasoline; // ガソリン最大量
+		for(int i = n; i >= 0; i--) {
+			gasoline--;
+			distance -= new java.util.Random().nextInt(15)+1;
+			if(distance <= 0) {
+				break;
+			}
+		}
 		if(gasoline < 0) {
 			return -1;
 		}else {
-			return new java.util.Random().nextInt(15)+1;
+			return gasoline;
 		}
 	}
 
