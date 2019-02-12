@@ -13,20 +13,104 @@ package practice12.common;
  */
 public class Student {
 	/** 受講生ID */
-	public int studentId;
+	private int studentId;
 
 	/** 受講生氏名 */
-	public String studentName;
+	private String studentName;
 
 	/** 会社名 */
-	public String companyName;
+	private String companyName;
 
 	/** 教室名 */
-	public String className;
+	private String className;
 
 	/** メールアドレス */
-	public String mail;
+	private String mail;
 
 	/** パスワード */
-	public String password;
+	private String password;
+
+	/**
+	 * @return studentId
+	 */
+	public int getStudentId() {
+		return studentId;
+	}
+
+	/**
+	 * @param studentId セットする studentId
+	 */
+	public void setStudentId(int studentId) {
+		this.studentId = studentId;
+	}
+
+	/**
+	 * @return studentName
+	 */
+	public String getStudentName() {
+		return studentName;
+	}
+
+	/**
+	 * @param studentName セットする studentName
+	 */
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+
+	/**
+	 * @return companyName
+	 */
+	public String getCompanyName() {
+		return companyName;
+	}
+
+	/**
+	 * @param companyName セットする companyName
+	 */
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+
+	/**
+	 * @return className
+	 */
+	public String getClassName() {
+		return className;
+	}
+
+	/**
+	 * @param className セットする className
+	 */
+	public void setClassName(String className) {
+		this.className = className;
+	}
+
+	/**
+	 * @return mail
+	 */
+	public String getMail() {
+		return mail;
+	}
+
+	/**
+	 * @param mail セットする mail
+	 */
+	public void setMail(String mail) {
+		this.mail = mail;
+	}
+
+	/**
+	 * @return password
+	 */
+	public String getPassword() {
+		return password;
+	}
+
+	/**
+	 * @param password セットする password
+	 */
+	public void setPassword(String password) {
+		this.password = password;
+	}
 }
