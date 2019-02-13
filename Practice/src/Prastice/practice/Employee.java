@@ -1,7 +1,6 @@
+package Prastice.practice;
+public class Employee {
 
-public class Employee18 {
-
-	public class Employee {
 	    private String company;
 	    private String name;
 	    private int age;
@@ -26,5 +25,3 @@ public class Employee18 {
 	    }
 
 	}
-
-}
