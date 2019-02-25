@@ -21,7 +21,7 @@ public class PTra13_04 {
 		Hero hero = new Hero (25, 10, 7);
 		hero.setName("勇者");
 
-		Slime slime = new Slime (30, 5, 2);
+		Slime slime = new Slime (10, 5, 2);
 		slime.setName("スライム");
 		/*
 		 * ★ HeroとSlimeを、どちらかが体力０になるまで戦わせます
@@ -30,7 +30,7 @@ public class PTra13_04 {
 		 * 上記を繰り返し行います
 		 */
 
-		do{
+		while(true){
 			if(slime.damage(hero.attack())) {
 				System.out.println(hero.getName() + "は" + slime.getName() + "との戦闘に勝利した");
 				break;
@@ -42,7 +42,7 @@ public class PTra13_04 {
 			}
 
 		}
-		while(true);
+
 
 		// ★ 勝利した方の出力を行ってください。「○○は■■との戦闘に勝利した」
 
