@@ -21,3 +21,4 @@ public class JavaCourse implements Course {
 	}
 
 }
+
