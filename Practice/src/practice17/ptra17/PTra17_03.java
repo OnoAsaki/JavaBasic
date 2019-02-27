@@ -44,7 +44,7 @@ public class PTra17_03 {
 				String input = ThrowExceptionUtil.inputValue();
 
 				int num = Integer.parseInt(input);
-
+	
 				if (answer[i] == num) {
 					score++;
 				}
